@@ -644,6 +644,7 @@ function getWorkshopsWithMitra() {
             w.training_session,
             w.requirements,
             w.benefits,
+            w.tipe,
             m.user_id AS mitra_id,
             m.first_name AS mitra_first_name,
             m.last_name AS mitra_last_name,
@@ -834,18 +835,18 @@ function checkAdmin() {
 // ========================================
 // Buat workshop oleh mitra
 function createWorkshop($mitra_id, $title, $description, $banner, $training_overview, $trained_competencies, 
-                       $training_session, $requirements, $benefits, $price, $location, $start_date, $end_date, $status) {
+                       $training_session, $requirements, $benefits, $price, $location,$tipe, $start_date, $end_date, $status) {
     global $conn;
 
     $sql = "INSERT INTO workshops (mitra_id, title, description, banner, training_overview, 
-            trained_competencies, training_session, requirements, benefits, price, location, 
+            trained_competencies, training_session, requirements, benefits, price, location,tipe, 
             start_date, end_date, status) 
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)";
 
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("issssssssdssss", $mitra_id, $title, $description, $banner, 
+    $stmt->bind_param("issssssssdsssss", $mitra_id, $title, $description, $banner, 
                       $training_overview, $trained_competencies, $training_session, 
-                      $requirements, $benefits, $price, $location, $start_date, $end_date, $status);
+                      $requirements, $benefits, $price, $location,$tipe, $start_date, $end_date, $status);
 
     if ($stmt->execute()) {
         return "Workshop berhasil dibuat.";

@@ -184,12 +184,12 @@
                   </a>
                 </li>
 
-                <li class="nav-item">
+               <!-- <li class="nav-item">
                   <a class="nav-link collapsed" href="data-feedback.php">
                     <i class="bi bi-star"></i>
                     <span>Data Review</span>
                   </a>
-                </li>
+                </li> -->
         
                 <!-- <li class="nav-item">
                   <a class="nav-link collapsed" href="kalender.php">

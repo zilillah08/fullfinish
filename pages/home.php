@@ -85,7 +85,7 @@ ini_set('display_errors', 1);
           <?php if($isLogin) { $role = $_SESSION['role']; ?>
           <li class="dropdown"><a href=" "><span>Akun</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="dashboard.php">Profil Saya</a></li>
+              <li><a href="profil.php">Profil Saya</a></li>
               <?php if($role != 'admin' && $role != 'mitra') { ?>
               <li><a href="aktivitas.php">Workshop Saya</a></li>
               <li><a href="data-pembayaran.php">Riwayat Transaksi</a></li>

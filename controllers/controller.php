@@ -122,6 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['createWorkshop'])) {
         $_POST['requirements'],
         $_POST['benefits'],
         $_POST['price'],
+        $_POST['tipe'],
         $_POST['location'],
         $_POST['start_date'],
         $_POST['end_date'],

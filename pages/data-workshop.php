@@ -85,6 +85,7 @@ $workshops = getWorkshopByMitraId($_SESSION['user_id']);
                       <th>Persyaratan</th>
                       <th>Manfaat</th>
                       <th>Harga</th>
+                      <th>Tipe</th>
                       <th>Lokasi</th>
                       <th>Tanggal Mulai</th>
                       <th>Tanggal Selesai</th>
@@ -106,6 +107,7 @@ $workshops = getWorkshopByMitraId($_SESSION['user_id']);
                       <td><?= $workshop['requirements'] ?></td>
                       <td><?= $workshop['benefits'] ?></td>
                       <td>Rp <?= number_format($workshop['price'],0,',','.') ?></td>
+                      <td><?= $workshop['tipe'] ?></td>
                       <td><?= $workshop['location'] ?></td>
                       <td><?= date('d/m/Y', strtotime($workshop['start_date'])) ?></td>
                       <td><?= date('d/m/Y', strtotime($workshop['end_date'])) ?></td>
@@ -174,6 +176,14 @@ $workshops = getWorkshopByMitraId($_SESSION['user_id']);
                                       <div class="mb-3">
                                           <label for="price" class="form-label">Harga</label>
                                           <input type="number" class="form-control" id="price" name="price" value="<?= $workshop['price'] ?>" required>
+                                      </div>
+
+                                      <div class="mb-3">
+                                          <label for="tipe" class="form-label">Status</label>
+                                          <select class="form-select" id="tipe" name="tipe" required>
+                                              <option value="online" <?= $workshop['tipe'] == 'online' ? 'selected' : '' ?>>Online</option>
+                                              <option value="offline" <?= $workshop['tipe'] == 'offline' ? 'selected' : '' ?>>Offline</option>
+                                          </select>
                                       </div>
                                         
                                       <div class="mb-3">

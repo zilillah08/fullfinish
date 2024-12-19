@@ -153,13 +153,13 @@
                       </div>
                     
                       <div class="mb-3">
-                          <label for="trained_competencies" class="form-label">Kompetensi</label>
+                          <label for="trained_competencies" class="form-label">Materi Yang Dilatih</label>
                           <textarea class="form-control" id="trained_competencies" name="trained_competencies" required></textarea>
                       </div>
                     
                       <div class="mb-3">
                           <label for="training_session" class="form-label">Sesi</label>
-                          <input type="text" class="form-control" id="training_session" name="training_session" required>
+                          <textarea class="form-control" id="training_session" name="training_session" required></textarea>
                       </div>
                     
                       <div class="mb-3">
@@ -175,6 +175,10 @@
                       <div class="mb-3">
                           <label for="price" class="form-label">Harga</label>
                           <input type="number" class="form-control" id="price" name="price" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="tipe" class="form-label">Tipe</label>
+                          <input type="text" class="form-control" id="tipe" name="tipe" required>
                       </div>
                     
                       <div class="mb-3">
