@@ -27,7 +27,7 @@
         <li class="nav-item">
           <a class="nav-link collapsed" href="data-mitra.php">
             <i class="bi bi-person-video3"></i>
-            <span>Mentor</span>
+            <span>Mitra</span>
           </a>
         </li>
 

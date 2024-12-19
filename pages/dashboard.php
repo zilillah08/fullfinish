@@ -114,7 +114,6 @@ $actualEarnings = getTotalPenghasilanByMitraId($_SESSION['user_id']);
                     </div>
                     <div class="ps-3">
                       <h6><?= $total_workshop=countWorkshops();?></h6>
-                      <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">meningkat</span>
 
                     </div>
                   </div>
@@ -148,7 +147,6 @@ $actualEarnings = getTotalPenghasilanByMitraId($_SESSION['user_id']);
                     </div>
                     <div class="ps-3">
                       <h6><?= $total_user=countRowsUsersByRole('user'); ?></h6>
-                      <span class="text-success small pt-1 fw-bold">15%</span> <span class="text-muted small pt-2 ps-1">meningkat</span>
 
                     </div>
                   </div>
@@ -183,7 +181,6 @@ $actualEarnings = getTotalPenghasilanByMitraId($_SESSION['user_id']);
                     </div>
                     <div class="ps-3">
                       <h6><?= $total_user=countRowsUsersByRole('mitra'); ?></h6>
-                      <span class="text-success small pt-1 fw-bold">10%</span> <span class="text-muted small pt-2 ps-1">meningkat</span>
 
                     </div>
                   </div>
